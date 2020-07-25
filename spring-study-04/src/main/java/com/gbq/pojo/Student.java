@@ -1,19 +1,26 @@
 package com.gbq.pojo;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 
 public class Student {
+    private int id;
     private String name;
     private Address address;
     private String[] books;
+    // 爱好
     private List<String> hobbys;
     private Map<String, String> card;
     private Set<String> games;
     private String wife;
     private Properties info;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -77,5 +84,20 @@ public class Student {
 
     public void setInfo(Properties info) {
         this.info = info;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address=" + address.toString() +
+                ", books=" + Arrays.toString(books) +
+                ", hobbys=" + hobbys +
+                ", card=" + card +
+                ", games=" + games +
+                ", wife='" + wife + '\'' +
+                ", info=" + info +
+                '}';
     }
 }

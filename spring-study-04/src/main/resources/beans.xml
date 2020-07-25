@@ -5,12 +5,63 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="student" class="com.gbq.pojo.Student">
-       <property name="name" value="gbq"/>
-       <property name="address" ref="address"/>
+        <!--普通值 注入 -->
+        <property name="id" value="23"/>
+        <property name="name" value="gbq"/>
+
+        <!--引用 注入-->
+        <property name="address" ref="address"/>
+
+        <!--数组 注入-->
+        <property name="books" >
+            <array>
+                <value>西游记</value>
+                <value>红楼梦</value>
+                <value>水浒传</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+
+        <!--map 注入-->
+        <property name="card">
+            <map>
+                <entry key="身份证" value="12233"/>
+                <entry key="银行卡" value="14543"/>
+            </map>
+        </property>
+
+        <!--set 注入-->
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>纸牌</value>
+            </set>
+        </property>
+
+        <!--list 注入-->
+        <property name="hobbys">
+            <list>
+                <value>看书</value>
+                <value>画画</value>
+            </list>
+        </property>
+
+        <!--Properties 注入-->
+        <property name="info">
+            <props>
+                <prop key="username">admin</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+
+        <!-- null 注入-->
+        <property name="wife">
+            <null/>
+        </property>
     </bean>
 
     <bean id="address" class="com.gbq.pojo.Address">
-
+        <property name="address" value="西安"/>
     </bean>
 
 </beans>
