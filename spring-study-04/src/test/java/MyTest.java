@@ -1,4 +1,6 @@
 import com.gbq.pojo.Student;
+import com.gbq.pojo.User;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,4 +11,15 @@ public class MyTest {
         Student student = (Student) context.getBean("student");
         System.out.println(student);
     }
+
+    @Test
+    public void testUser() {
+        ApplicationContext context = new ClassPathXmlApplicationContext("userbeans.xml");
+        User user = context.getBean("user", User.class);
+        System.out.println(user);
+        User user2 = context.getBean("user2", User.class);
+        System.out.println(user2);
+    }
+
+
 }
