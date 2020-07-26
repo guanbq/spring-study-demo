@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-study-04</module>
+        <module>spring-study-05-Autowired</module>
     </modules>
 
     <dependencies>
