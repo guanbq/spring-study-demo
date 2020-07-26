@@ -1,7 +1,12 @@
 package com.gbq.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 public class People {
     private String name;
+    @Autowired
+    @Qualifier(value = "cat")
     private Cat cat;
     private Dog dog;
 

@@ -12,6 +12,7 @@
         <module>spring-study-04</module>
         <module>spring-study-05-Autowired</module>
         <module>spring-study-06-Annotation</module>
+        <module>spring-study-07-AppConfig</module>
     </modules>
 
     <dependencies>
