@@ -13,6 +13,8 @@ import org.springframework.context.annotation.Import;
 public class AppConfig {
 
     @Bean // 此注解相当于XML中的bean标签
+    // 这个方法的名字，相当于bean标签中的id
+    // 这个方法的返回类型，相当于bean标签中的class
     public User getUser(){
         return new User();
     }
