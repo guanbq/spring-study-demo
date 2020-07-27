@@ -14,6 +14,7 @@
         <module>spring-study-06-Annotation</module>
         <module>spring-study-07-AppConfig</module>
         <module>spring-study-08-proxy</module>
+        <module>spring-study-09-aop</module>
     </modules>
 
     <dependencies>
@@ -27,6 +28,13 @@
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/aspectj/aspectjweaver -->
+        <dependency>
+            <groupId>aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.5.4</version>
         </dependency>
     </dependencies>
 
