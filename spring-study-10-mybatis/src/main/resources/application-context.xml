@@ -9,4 +9,8 @@
     <bean id="userMapperImpl" class="com.gbq.mapper.UserMapperImpl">
         <property name="sqlSession" ref="sqlSession"/>
     </bean>
+
+    <bean id="userMapperImplTwo" class="com.gbq.mapper.UserMapperImplTwo">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
 </beans>

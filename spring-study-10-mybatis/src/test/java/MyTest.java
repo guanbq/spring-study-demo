@@ -34,6 +34,14 @@ public class MyTest {
             System.out.println(user);
         }
 
+        UserMapper userMapperImplTwo = context.getBean("userMapperImplTwo", UserMapper.class);
+        userList = userMapperImpl.selectUser();
+        for (User user : userList) {
+            System.out.println(user);
+        }
+
+
+
 
     }
 }
