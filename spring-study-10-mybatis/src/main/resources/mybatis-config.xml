@@ -8,12 +8,12 @@
         <package name="com.gbq.pojo"/>
     </typeAliases>
 
-    <environments default="development">
+   <!-- <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <!--This is deprecated-->
-               <!-- <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+                &lt;!&ndash;This is deprecated&ndash;&gt;
+               &lt;!&ndash; <property name="driver" value="com.mysql.jdbc.Driver"/>&ndash;&gt;
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://localhost:3306/mybatis_study?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false&amp;serverTimezone=UTC"/>
                 <property name="username" value="root"/>
@@ -24,7 +24,7 @@
 
     <mappers>
         <package name="com.gbq.mapper"/>
-    </mappers>
+    </mappers>-->
 
 
 </configuration>
